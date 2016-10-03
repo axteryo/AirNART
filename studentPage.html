@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Student Login</title>
+</head>
+<body>
+<img class="img-responsive center-block" src="airport.jpg" alt="city" height="300px" width="700px">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav nav nav-pills">
+          <li class="active"><a href="#featured">Home</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav>
+ 
+
+<div class="content container">
+  <div class="row">
+    <section class="col-sm-12">
+      <h2>Welcome to AirNART's <span style="color:Blue">Student Page</span></h2>    
+      <hr style="color:Blue">
+      <h3>Here you can view your current rides as well as request additional rides, update your information, and keep track of your rides location!</h3>  
+    </section>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-3		">
+    <form class="form-signin">
+  	  <h2 class="form-signin-heading">Logged in as Student</h2>       
+      <h4 class="form-signin-heading"><a href="index.html">Log Out</a></h4>
+        <input align="right" type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> 		Remember me
+        <br/>
+        
+      </label>
+     
+      <hr>
+    </form>
+
+  </div>
+
+    <div class="col-xs-6 col-sm-8">
+      <h3>Your Current Rides</h3>
+	  <p><form>
+	  <h4>You have <span style="color:Red">2</span> ride(s) Scheduled!</h4>
+	  <img class="img-responsive left-block" src="planeIcon.jpg" alt="city" height="50px" width="50px">
+
+	  <h4><span style="color:Red">Boston</span>|3:30 Thursday|3 Bags|Rider: <a href="index.html">John Doe</a></h4></h4>
+
+	  <img class="img-responsive left-block" src="carIcon.jpg" alt="city" height="50px" width="50px">
+
+	  <h4><span style="color:Red">Atlanta</span>|4:42 Monday|600 Bags|Rider: <a href="index.html">Jason Doe</a></h4></h4><br>
+	  <br>
+	  <button class="btn btn-lg btn btn-warning">Cancel Ride?</button>
+
+
+	  <h2>Request another ride?</h2>
+	  Destination:<br>
+	  <input type="text" name="destination"><br>
+	  Time of Arrival:<br>
+	  <input type="text" name="arrivalTime"><br>
+	  Baggage:<br>
+	  <input type="text" name="bags"><br>
+	  Extra Preferences:<br>
+	  <input type="textbox" name="prefs"><br>
+	  <br>
+	  <button class="btn btn-lg btn btn-warning">Submit Request</button>
+</form> </p>
+    </div>
+
+  </div>
+
+
+   <br/> <br/> <br/> <br/> <br/> <br/>
+  <footer class="container-fluid">
+  <p>Copyright 2016 AirNart Inc. </p>
+</footer>
+ <br/> <br/> <br/>
+</div><!-- content container -->
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

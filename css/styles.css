@@ -1,0 +1,139 @@
+span{
+	display: block;
+	padding: 50px 50px; 
+	overflow: hidden;
+}
+
+
+
+.bgimage
+{
+	background-image: url('../assets/fexchange.jpg');
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	opacity: ;
+	
+
+	
+}
+.bgimagevolunteer
+{
+	
+	background-image: url('../assets/volunteer.jpg');
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	opacity: ;
+	
+	
+
+}
+.bgimagestudent
+{
+	
+	background-image: url('../airport.jpg');
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	opacity: ;
+	
+	
+
+}
+
+.pageheading
+{
+	background-color: #ad236c;
+	color: white;
+	height: 90px;
+	margin-bottom: 20px;
+}
+.h1-head
+{
+	padding-left: 5%;
+}
+.h1-title
+{
+	border-bottom: 5px solid #eedf34;
+
+
+}
+.logoutlinkcontainer
+{
+
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	border-left: white 5px solid;
+	height: 50px
+
+}
+.logoutlink
+{
+	color: white;
+	text-decoration: none;
+}
+.logoutlink:hover
+{
+	color: #eedf34;
+	text-decoration: none;
+}
+
+.navbar-custom
+{
+	background-color: #6f6666;
+	border-top:5px solid #eedf34;
+
+	width: 100%;
+
+
+}
+.nav-custom{
+
+	background-color: #6f6666;
+	list-style-type: none;
+	width: 100%;
+    text-align: left;
+    overflow: hidden;
+    display: block;
+ 
+}
+.navli{
+	
+	display: inline;
+	
+	
+
+
+}
+.nav:li
+{
+	color: white;
+}
+.navlink{
+	text-decoration: none;
+	display: inline-block;
+	padding:14px 16px;
+	color: white;
+	font-size: 15px;
+	
+}
+.navlink:hover {
+	text-decoration: none;
+    background-color: #343131;
+    color: #eedf34;
+}
+
+/*.active
+{
+	
+	background-color: #343131;
+	padding:16px 0px 16px 0px;
+	height: 55px;
+
+	
+}*/

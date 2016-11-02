@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src = "js/registration.js"></script>
+  <script type="text/javascript" src = "js/jquery-3.1.0.min.js"></script>
+  <title>Register!</title>
+</head>
+<header>
+  <section class="fluid-container">
+    <div class="row pageheading">
+      <h1 class="col-xs-9 col-sm-10 col-md-10 h1-head">AIR-NART</h1>
+      <h2  class="col-xs-3 col-sm-2 col-md-2 logoutlinkcontainer"><a href="nowhere.html" class = "logoutlink">Login</a></h2>
+    </div>
+  </section>
+</header>
+<!--
+<section class="bgimagestudent"></section>
+-->
+
+
+<body>
+  <div class="container">
+    <div class="row">
+        <section class="col-sm-12">
+         <h1 class="h1-title">Air-Nart SignUp</h1>
+        </section>
+    </div>
+  </div>
+        
+    
+    <div class="container">
+      <span>  
+        <form>
+          <div class="row">
+            <section class=" container col-md-12 col-sm-12">
+              <label>
+                Register as a:
+              </label><br><br>
+              <input type="radio" id="foreignform" name="register" value ="foreignStudent" />Foreign Student &nbsp;&nbsp;
+              <input type="radio" id="volunteerform" name="register" value ="volunteerStudent" />Volunteer Student<br><br>
+              </section>
+            </div>
+        </form>
+        <form id = "foreignregistration" name="foreignregistration" style = "display :none" action="processing.php" method="post">
+            <section>
+            <div class="row">
+                <div class="fixed-width container col-md-6 col-sm-6">
+                  <label>
+                    Name:
+                  </label><br>
+                  <input type="name" required autocomplete="off" name="name" id="name"/><br><br>
+                   <label>
+                    Gender:
+                  </label><br>
+                  <input type="radio" name="gender" id="genderMale" value = "male" required autocomplete="off"/> Male
+                  <input type="radio" name="gender" id="genderFemale" value = "female" required autocomplete="off"/> Female<br><br>
+                
+                  <label>
+                    Email Address:
+                  </label><br>
+                  <input type="email" required autocomplete="off" name= "email" id="email" /><br><br>
+
+                  <label>
+                    Varify Email Address:
+                  </label><br>
+                  <input type="email" required name="emailsecond" name ="emailSecond" id="emailSecond"><br><br>
+                  <label>
+                    Phone number:
+                  </label><br>
+                  <input type="phone" required autocomplete="off" name="phone" id="phone" /><br><br>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                  <label>
+                    Enter password:
+                  </label><br>
+                  <input type="password" required autocomplete="off" name = "password" id="password" /><br><br>
+                   <label>
+                    Varify password:
+                  </label><br>
+                  <input type="password" required autocomplete="off" name="passwordSecond" id="passwordSecond" /><br><br>
+
+                  <label>
+                    Afiliation:
+                  </label><br>
+                  <input type="radio" name="afiliation" id = "afiliationgsu" value = "gsu" required autocomplete="off"/> GSU
+                  <input type="radio" name="afiliation" id="afiliationgatech" value = "gatech" required autocomplete="off"/> GATECH<br><br>
+                   <label>
+                    Major
+                  </label><br>
+                    <input type="text" name="major" required autocomplete="off" id="major"><br><br>
+
+                  <label>
+                    Level of Study
+                  </label><br>
+                    <input type="text" required name="levelofstudy" id="los"><br><br>
+
+
+
+                  <button type="submit" name="foreignregistration" class="button button-block"/>Sign-Up!</button>    
+                </div>
+              </div>
+            </section>
+          </form>
+
+
+          <form id ="volunteerregistration" name ="volunteerregistration" style = "display :none" action="processing.php" method="post">
+            <section>
+              <div class="row">
+                <div class="fixed-width container col-md-6 col-sm-6">
+                <label>
+                    Name:
+                  </label><br>
+                  <input type="name" name="name" required autocomplete="off" id="name" /><br><br>
+                   <label>
+                    Gender:
+                  </label><br>
+                  <input type="radio" name="gender" value = "male" required autocomplete="off"/> Male
+                  <input type="radio" name="gender" value = "female" required autocomplete="off"/> Female<br><br>
+                
+                  <label>
+                    Email Address:
+                  </label><br>
+                  <input type="email" required autocomplete="off" name= "email" id="email" /><br><br>
+
+                  <label>
+                    Varify Email Address:
+                  </label><br>
+                  <input type="email" required name="emailsecond" name ="emailSecond" id="emailSecond"><br><br>
+                  <label>
+                    Phone number:
+                  </label><br>
+                  <input type="phone" required autocomplete="off" name="phone" id="phone" /><br><br>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                  <label>
+                    Enter password:
+                  </label><br>
+                  <input type="password" required autocomplete="off" name="password" id="password" /><br><br>
+                   <label>
+                    Varify password:
+                  </label><br>
+                  <input type="password" required autocomplete="off" name="passwordSecond" id="passwordSecond"/><br><br>
+
+                  <label>
+                    Afiliation:
+                  </label><br>
+                  <input type="radio" name="afiliation" value = "gsu" required autocomplete="off"/> GSU
+                  <input type="radio" name="afiliation" value = "gatech" required autocomplete="off"/> GATECH<br><br>
+
+                  <button type="submit" name="volunteerregistration" class="button button-block"/>Sign-Up!</button>    
+                </div>
+              </div>
+            </section>
+          </form>          
+        </span>
+      </div>
+
+<script type="text/javascript" src = "js/registration_set.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

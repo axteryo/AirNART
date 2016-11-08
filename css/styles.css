@@ -3,6 +3,9 @@ span{
 	padding: 50px 50px; 
 	overflow: hidden;
 }
+form{
+	
+}
 
 
 
@@ -34,7 +37,7 @@ span{
 .bgimagestudent
 {
 	
-	background-image: url('../airport.jpg');
+	background-image: url('../assets/airport.jpg');
 	background-position: center center;
 	background-size: cover;
 	width: 100%;
@@ -50,6 +53,7 @@ span{
 	background-color: #ad236c;
 	color: white;
 	height: 90px;
+	margin:auto;
 	margin-bottom: 20px;
 }
 .h1-head
@@ -59,8 +63,10 @@ span{
 .h1-title
 {
 	border-bottom: 5px solid #eedf34;
-
-
+}
+.h3-title
+{
+	border-bottom: 2px solid grey;
 }
 .logoutlinkcontainer
 {
@@ -87,7 +93,11 @@ span{
 {
 	background-color: #6f6666;
 	border-top:5px solid #eedf34;
+<<<<<<< HEAD
 	height: 50px;
+=======
+	height:50px;
+>>>>>>> 50078766def03d11d01a56f63f63c1364748037f
 	width: 100%;
 
 

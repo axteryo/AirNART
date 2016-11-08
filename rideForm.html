@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Student Login</title>
+  <title>Requesting a Ride</title>
 </head>
 <body>
 
@@ -14,7 +14,9 @@
 <header>
   <section class="fluid-container">
     <div class="row pageheading">
-      <h1 class="col-xs-9 col-sm-10 col-md-10 h1-head">AIR-NART</h1>   
+      <h1 class="col-xs-9 col-sm-10 col-md-10 h1-head">AIR-NART</h1>
+      <h2  class="col-xs-3 col-sm-2 col-md-2 logoutlinkcontainer"><a href="nowhere.html" class = "logoutlink">Logout</h2>
+   
     </div>
 
   </section>
@@ -22,21 +24,26 @@
 
 
 <div class="fluid-container">
+  <nav class="navbar-custom">
     <div class="container">
-      <div class="row">   
+      <div class="row">
+        <ul class ="nav-custom">
           <li class = "active navli col-md-3 col-sm-3 col-xs-12"> <a href = "index.html" class="navlink">Home</a></li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
+</div>
 <section class = "bgimagestudent">
+  
 </section>
 <!--<img class="img-responsive center-block" src="airport.jpg" alt="city" height="300px" width="700px">-->
 <div class="content container">
   <div class="row">
     <section class="col-sm-12">
-      <h1 class="h1-title">Welcome to AirNART's <span style="color:Blue">Student Page</span></h1>    
+      <h1 class="h1-title"><span style="color:Blue">Ride Request Page</span></h1>    
       <hr style="color:Blue">
-      <h3>Here you can view your current rides as well as request additional rides, update your information, and keep track of your rides location!</h3>  
+       
     </section>
   </div>
 
@@ -56,26 +63,30 @@
   </div>
 
     <div class="col-xs-6 col-sm-8">
-      <h3>Your Current Rides</h3>
-    <p><form>
-    <h4>You have <span style="color:Red">2</span> ride(s) Scheduled!</h4>
-    <img class="img-responsive left-block" src="planeIcon.jpg" alt="city" height="50px" width="50px">
 
-    <h4><span style="color:Red">Boston</span>|3:30 Thursday|3 Bags|Rider: <a href="index.html">John Doe</a></h4></h4>
+    <h2>Please enter your request details</h2>
+   <label>
+    Airport pickup?:
+    </label><br><br>
+    <input type="radio" name="needAP" value="Yes" checked> Yes
+	  <input type="radio" name="needAP" value="No"> No<br><br>
+    <label>
+    Flight Details:
+    </label><br><br>
+    <label>
+    Flight Number <input type="text" name="arrivalTime">
+    </label>
+   	AirLine Name<input type="text" name="arrivalTime"><br>
+   	Date <input type="text" name="arrivalTime"><br>
+    Time <input type="text" name="arrivalTime"><br><br>
+    Leaving Home Country:<br>
+    Flight Number <input type="text" name="arrivalTime"><br>
+   	AirLine Name<input type="text" name="arrivalTime"><br><br>
+    Baggage:<br>
+    <input type="text" name="bags"><br>
 
-    <img class="img-responsive left-block" src="carIcon.jpg" alt="city" height="50px" width="50px">
-
-    <h4><span style="color:Red">Atlanta</span>|4:42 Monday|600 Bags|Rider: <a href="index.html">Jason Doe</a></h4></h4><br>
     <br>
-    <button class="btn btn-lg btn btn-warning">Cancel Ride?</button><br><br>
-
-
-    
- 
-  <button><a href="rideForm.html">Request Ride</a></button>
-  <button><a href="houseForm.html">Request Housing</a></button>
-
-    
+    <button class="btn btn-lg btn btn-warning">Submit Request</button>
 </form> </p>
     </div>
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bootstrap</title>
+</head>
+<header>
+  <section class="fluid-container">
+    <div class="row pageheading">
+      <h1 class="col-xs-9 col-sm-10 col-md-12 h1-head">AIR-NART</h1>
+    </div>
+  </section>
+</header>
+
+<section class="bgimagevolunteer"></section>
+
+
+
+<body>
+
+  <div class="container">
+    <div  class="h1-title">
+      <h1> Volunteer For Pickup </h1>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      <form>
+        <h2>Logged in as Volunteer</h2>       
+        <h4 ><a href="index.html">Log Out</a></h4>
+
+        <br/>
+        </label>
+      </form>
+    </div>
+    <div class="col-md-9">
+
+
+
+      <span>
+        <h2>Set Pickup availability</h2>
+        <br>
+        <form>
+        <label> Pickup Date</label>
+        <input type="date" name="pickupdate"><br><br>
+        <label> Availability period</label><br>
+        <input type="checkbox" name="availabilityperiod" value="Morning">Morning(7am - 12pm)<br><br>
+        <input type="checkbox" name="availabilityperiod" value="Afternoon">Afternoon(12pm - 5pm)<br><br>
+        <input type="checkbox" name="availabilityperiod" value="Evening">Evening(5pm - 10pm)<br><br>
+        <label> Number of Students able to Pickup</label>
+        <input type="text" name="studentcount"><br><br>
+        <label>Amount of Luggage Space(1 bag, 2 bags,etc)</label>
+        <input type="text" name="luggagespace"><br><br>
+        <label> Number of Trips(1,2,3,etc)</label><br>
+        <input type="text" name="numoftrips"><br><br>
+        <label> Comments</label>
+        <textarea rows="4" cols="100" name="comments" form="requestform"></textarea><br><br>
+        
+
+
+          <input type="submit" class="btn btn-warning" value="submit"> 
+          <input type="reset" class="btn btn-warning">         
+        </form>
+      </span>
+    </div>
+  </div>
+
+
+ <footer class="container-fluid">
+  <p>Copyright 2016 AirNart Inc. </p>
+</footer>
+
+ 
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/volunteer_for_transportation.js"></script>
+
+
+</body>
+</html>

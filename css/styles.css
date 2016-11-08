@@ -4,7 +4,7 @@ span{
 	overflow: hidden;
 }
 form{
-	text-align: center;
+	
 }
 
 
@@ -37,7 +37,7 @@ form{
 .bgimagestudent
 {
 	
-	background-image: url('../airport.jpg');
+	background-image: url('../assets/airport.jpg');
 	background-position: center center;
 	background-size: cover;
 	width: 100%;
@@ -53,6 +53,7 @@ form{
 	background-color: #ad236c;
 	color: white;
 	height: 90px;
+	margin:auto;
 	margin-bottom: 20px;
 }
 .h1-head
@@ -62,8 +63,10 @@ form{
 .h1-title
 {
 	border-bottom: 5px solid #eedf34;
-
-
+}
+.h3-title
+{
+	border-bottom: 2px solid grey;
 }
 .logoutlinkcontainer
 {

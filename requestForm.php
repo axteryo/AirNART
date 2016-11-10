@@ -1,3 +1,18 @@
+<?php
+
+    session_start();
+    if(!(isset($_SESSION['login'])&& $_SESSION['login']!=''))
+    {
+      echo "In order to reaccess this page, you must login!";
+      header("Location:index.html");
+    }
+
+    include("connection.php");
+    include("studentCover.html"); 
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,24 +26,10 @@
 <body>
 
 
-<header>
-  <section class="fluid-container">
-    <div class="row pageheading">
-      <h1 class="col-xs-9 col-sm-10 col-md-10 h1-head">AIR-NART</h1>
-      
-    </div>
-
-  </section>
-</header>
-<section class = "bgimagestudent">
-</section>
-<!--<img class="img-responsive center-block" src="airport.jpg" alt="city" height="300px" width="700px">-->
 <div class="content container">
   <div class="row">
     <section class="col-sm-12">
-      <h1 class="h1-title"><span>Air-Nart Requests Form</span></h1>    
-      
-       
+      <h1 class="h1-title">Air-Nart Requests Form</h1>    
     </section>
   </div>
 
@@ -44,7 +45,7 @@
  </div>
  <span class="col-xs-12 col-sm-8">
   <h2>Please enter your request details</h2><br>
-  <form>
+  <form name="requestform" action="process_requests.php" method="post">
       <div class="h3-title">
       <h3>Flight Information</h3>
       </div>
@@ -52,8 +53,8 @@
       <label>
       Do you require aiport pickup?
       </label>
-      <input type="radio" name="needAP" value="Yes"> Yes
-  	  <input type="radio" name="needAP" value="No"> No<br><br>
+      <input type="radio" name="needpickup" value="Yes"> Yes
+  	  <input type="radio" name="needpickup" value="No"> No<br><br>
       <h4>Departure Flight</h4>
       <label>
         Home Country Airline Name
@@ -107,8 +108,8 @@
       <label>
         Do you require housing?
       </label>
-      <input type="radio" name="needHousing" value="Yes"> Yes
-      <input type="radio" name="needHousing" value="No"> No<br><br>
+      <input type="radio" name="needhousing" value="Yes"> Yes
+      <input type="radio" name="needhousing" value="No"> No<br><br>
       <h4>When?</h4>
       <label>Date</label>
       <input type="date" name="housingdate">
@@ -120,7 +121,7 @@
       <br>
       <input type="address" name="nextdestination"><br><br>
       <label>Comments</label>
-      <textarea rows="4" cols="100" name="comments" form="requestform">Please tell us any special needs or concerns you might have....</textarea><br><br>
+      <textarea rows="4" cols="100" name="comments" placeholder="Please tell us any special needs or concerns you might have...."></textarea><br><br>
       <h4>Where would you like to be sent?</h4><br>
       <label>Resident name</label>
       <br>
@@ -132,10 +133,17 @@
       <label>Resident Address</label>
       <br>
       <input type="address" name="nonaffiliatedaddress"><br><br>
+      <h4>Got any luggage?</h4>
+      <br>
+      <label>
+      Amount of Luggage(1,2,3)
+      </label>
+      <br>
+      <input type="text" name="bag_amount">
+      <br><br>
 
 
-
-      <button class="btn btn-lg btn btn-warning">Submit Request</button>
+      <button class="btn btn-lg btn btn-warning" type="submit">Submit Request</button>
   </form> 
     </span>
   </div>
@@ -148,9 +156,9 @@
  
 </div><!-- content container -->
 
-
+<!--
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>-->
 <script src="js/script.js"></script>
 </body>
 </html>

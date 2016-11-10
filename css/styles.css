@@ -127,14 +127,13 @@ form{
 .navlink{
 	text-decoration: none;
 	display: inline-block;
-	padding:14px 16px;
+	padding-top:10px;
 	color: white;
 	font-size: 15px;
 	
 }
 .navlink:hover {
 	text-decoration: none;
-    background-color: #343131;
     color: #eedf34;
 }
 

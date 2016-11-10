@@ -1,48 +1,34 @@
+
+<?php  include("studentCover.html"); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--<meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">-->
   <title>Request form</title>
 </head>
 <body>
-
-
-<header>
-  <section class="fluid-container">
-    <div class="row pageheading">
-      <h1 class="col-xs-9 col-sm-10 col-md-10 h1-head">AIR-NART</h1>
-      
-    </div>
-
-  </section>
-</header>
-<section class = "bgimagestudent">
-</section>
-<!--<img class="img-responsive center-block" src="airport.jpg" alt="city" height="300px" width="700px">-->
 <div class="content container">
   <div class="row">
-    <section class="col-sm-12">
-      <h1 class="h1-title"><span>Air-Nart Requests Form</span></h1>    
-      
-       
-    </section>
+      <h1 class="h1-title">Welcome to AirNART's Student Page</h1>  
   </div>
 
- 
-    <div class="col-xs-12 col-sm-3   ">
-    <form>
-      <h2>Logged in as Student</h2>       
-      <h4 ><a href="index.html">Log Out</a></h4>
+  <div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-3 ">
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Logged in as Student</h2>       
+      <h4 class="form-signin-heading"><a href="index.html">Log Out</a></h4>
         <input align="right" type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">     Remember me
         <br/>
+        
       </label>
-  </form>
- </div>
- <span class="col-xs-12 col-sm-8">
+     
+      <hr>
+    </form>
+  </div>
+ 
+   
+ <span class="col-xs-12 col-sm-8 col-md-8">
   <h2>Please enter your request details</h2><br>
   <form>
       <div class="h3-title">
@@ -142,11 +128,12 @@
 
 
   
-  <footer class="container-fluid">
+
+</div><!-- content container -->
+  <footer class="container-fluid col-md-12">
   <p>Copyright 2016 AirNart Inc. </p>
 </footer>
- 
-</div><!-- content container -->
+
 
 
 <script src="js/jquery-2.1.4.min.js"></script>

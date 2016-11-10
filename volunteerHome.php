@@ -1,3 +1,5 @@
+<?php include("volunteerCover.html");?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,25 +11,23 @@
   <title>Bootstrap</title>
 </head>
 
-<div class="fluid-container">
-  <nav class="navbar-custom">
-    <div class="container">
-      <div class="row">
-        <ul class ="nav-custom">
-          <li class = "active navli col-md-3 col-sm-3 col-xs-12"> <a href = "index.html" class="navlink">Home</a></li>
-          <li class="navli col-md-3 col-sm-3 col-xs-12"> <a href = "volunteerHome.html" class="navlink"> Volunteer</a></li>
-        </ul>
-      </div>
+<div class="content container">
+  <div class="row">
+    <section class="col-sm-12">
+      <h1 class="h1-title">Air-Nart's Volunteer Home</h1>    
+    </section>
+  </div>
+
+<div class="col-xs-12 col-sm-3 col-md-3">
+      <form class="">
+        <h2>Logged in as Volunteer</h2>       
+        <h4 ><a href="index.html">Log Out</a></h4>
+
+        <br/>
+        </label>
+      </form>
     </div>
-  </nav>
-</div>
-<body>
-
-        
-          </span>
-
-          </div>
-
+      
 <!--
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

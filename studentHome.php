@@ -1,4 +1,15 @@
-<?php  include("studentCover.html"); ?>
+<?php
+
+    session_start();
+    if(!(isset($_SESSION['login'])&& $_SESSION['login']!=''))
+    {
+      echo "In order to reaccess this page, you must login!";
+      header("Location:index.php");
+    }
+
+    include("connection.php");
+    include("studentCover.html"); 
+?>
 
 
 <!DOCTYPE html>
@@ -11,39 +22,43 @@
   <link rel="stylesheet" href="css/styles.css">-->
   <title>Student Home</title>
 </head>
-<body>
+<section class="bgimagestudent"></section>
 
 <div class="fluid-container">
+  <nav class="navbar-custom">
     <div class="container">
-      <div class="row">   
+      <div class="row">
+        <ul class ="nav-custom">
+          <li class = "active navli col-md-3 col-sm-3 col-xs-12"> <a href = "studentHome.php" class="navlink">Home</a></li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
+</div>
+<body class="">
+
 <!--<img class="img-responsive center-block" src="airport.jpg" alt="city" height="300px" width="700px">-->
-<div class="content container">
+<div class="content container bgshadow">
   <div class="row">
-    
-      <h1 class="h1-title">Welcome to AirNART's Student Page</h1>  
+    <section class="col-sm-12 col-xs-12">
+      <h1 class="h1-title">Welcome to AirNART's Student Page</h1> 
+      </section> 
   </div>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-3 col-md-3 ">
-    <form class="form-signin">
-      <h2 class="form-signin-heading">Logged in as Student</h2>       
-      <h4 class="form-signin-heading"><a href="index.html">Log Out</a></h4>
-        <input align="right" type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">     Remember me
-        <br/>
-        
-      </label>
-     
+  
+  <div class=" col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <h3>Hello User1</h3>
+        <ul>
+        <li>Status: Student</li>
+        <li>New Messages:(0)</li>
+        <li><a href="logout.php">Log Out</a></li>
+      </ul>
       <hr>
-    </form>
-
   </div>
 
-    <div class="col-xs-6 col-sm-8">
+    <div class=" col-md-9 col-sm-9 col-xs-12">
     <span>
-    <h3>Here you can view your current rides as well as request additional rides, update your information, and keep track of your rides location!</h3>  
+    <p>Here you can view and edit your current requests, as well as make additional requests, update your information!</p>  
     <h3>Your Current Requests</h3>
     <p>
     <form>
@@ -60,7 +75,7 @@
     <h4><span style="color:Red">Atlanta</span>|4:42 Monday|600 Bags|Rider: <a href="index.html">Jason Doe</a></h4></h4><br>
     <br>
     <button class="btn btn-lg btn btn-warning">Cancel Ride?</button><br><br>--> 
-    <button><a href="requestForm.php">Request Pickup | Housing</a></button>
+    <button class="btn btn-lg btn btn-warning"><a href="requestForm.php" class="btn-a">Request Pickup | Housing</a></button>
    
     </form> 
     </p>
@@ -69,16 +84,16 @@
   </div>
 
 
-   
-  <footer class="container-fluid col-md-12">
-  <p>Copyright 2016 AirNart Inc. </p>
-</footer>
+  
  <br/> <br/> <br/>
 </div>
 
 
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>-->
+
 </body>
+ 
+   <footer class="container-fluid col-md-12">
+  <span>
+Copyright 2016 AirNart Inc. </span>
+</footer>
 </html>

@@ -1,3 +1,19 @@
+<?php
+
+    session_start();
+    if(!(isset($_SESSION['login'])&& $_SESSION['login']!=''))
+    {
+      echo "In order to reaccess this page, you must login!";
+      header("Location:index.php");
+    }
+
+    include("connection.php");
+  
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,22 +81,25 @@
 
 		
 	
-			<span>
-			<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				<h3>This is the side Bar</h3>
+	
+			<div class=" col-lg-3 col-md-4 col-sm-3 col-xs-12">
+				<h3>Hello User1</h3>
 				<ul>
 				<li>Status: Admin</li>
-				<li>Name: User1</li>
 				<li>New Messages:(0)</li>
-			</ul>
-			<hr>
+				<li><a href="logout.php">Log Out</a></li>
+				</ul>
+				<hr>
 			</div>
 		
 			
-			<div class=" fluid-container col-lg-9 col-md-9 col-sm-9 col-xs-12">
+			<div class=" fluid-container col-lg-9 col-md-8 col-sm-9 col-xs-12">
 				
 				<span>
-			
+				
+				<button class="btn btn-lg btn btn-warning"><a href="" class="btn-a">Manage Requests</a></button>
+				<button class="btn btn-lg btn btn-warning"><a href="" class="btn-a">Manage Volunteers</a></button>
+					
 				</span>
 			</div>
 	</div>

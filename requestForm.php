@@ -5,6 +5,7 @@
     {
       echo "In order to reaccess this page, you must login!";
       header("Location:index.html");
+      exit;
     }
 
     include("connection.php");
@@ -23,10 +24,23 @@
   <link rel="stylesheet" href="css/styles.css">-->
   <title>Request form</title>
 </head>
-<body>
+<section class="bgimagerequest"></section>
+
+<div class="fluid-container">
+  <nav class="navbar-custom">
+    <div class="container">
+      <div class="row">
+        <ul class ="nav-custom">
+          <li class = "active navli col-md-3 col-sm-3 col-xs-12"> <a href = "studentHome.php" class="navlink">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<body class="">
 
 
-<div class="content container">
+<div class="content container bgshadow">
   <div class="row">
     <section class="col-sm-12">
       <h1 class="h1-title">Air-Nart Requests Form</h1>    
@@ -34,16 +48,15 @@
   </div>
 
  
-    <div class="col-xs-12 col-sm-3   ">
-    <form>
-      <h2>Logged in as Student</h2>       
-      <h4 ><a href="index.html">Log Out</a></h4>
-        <input align="right" type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">     Remember me
+      <div class="col-xs-12 col-sm-4 col-md-3 ">
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Logged in as Student</h2>       
+      <p class="form-signin-heading"><a href="logout.php">Log Out</a></p>
         <br/>
-      </label>
-  </form>
- </div>
- <span class="col-xs-12 col-sm-8">
+      <hr>
+    </form>
+  </div>
+ <span class="col-xs-12 col-sm-9 col-md-9">
   <h2>Please enter your request details</h2><br>
   <form name="requestform" action="process_requests.php" method="post">
       <div class="h3-title">
@@ -150,9 +163,7 @@
 
 
   
-  <footer class="container-fluid">
-  <p>Copyright 2016 AirNart Inc. </p>
-</footer>
+ 
  
 </div><!-- content container -->
 
@@ -161,4 +172,10 @@
 <script src="js/bootstrap.min.js"></script>-->
 <script src="js/script.js"></script>
 </body>
+
+<footer class="container-fluid col-md-12">
+  <span>
+Copyright 2016 AirNart Inc.
+  </span>
+</footer>
 </html>

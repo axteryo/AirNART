@@ -1,51 +1,43 @@
+<?php include("volunteerCover.html");?>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <!--<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">-->
   <title>Bootstrap</title>
 </head>
-<header>
-  <section class="fluid-container">
-    <div class="row pageheading">
-      <h1 class="col-xs-9 col-sm-10 col-md-12 h1-head">AIR-NART</h1>
-    </div>
-  </section>
-</header>
-
-<section class="bgimagevolunteer"></section>
-
-
 
 <body>
 
-  <div class="container">
-    <div  class="h1-title">
-      <h1> Volunteer For Housing </h1>
-    </div>
-    <div class="col-xs-12 col-sm-3 col-md-3">
-      <form class="">
-        <h2>Logged in as Volunteer</h2>       
-        <h4 ><a href="index.html">Log Out</a></h4>
+  <div class="content container bgshadow">
+  <div class="row">
+    <section class="col-sm-12 col-xs-12">
+      <h1 class="h1-title">Volunteer For Housing</h1> 
+      </section> 
+  </div>
 
+<div class="col-xs-12 col-sm-4 col-md-3 ">
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Logged in as Volunteer</h2>       
+      <p class="form-signin-heading"><a href="logout.php">Log Out</a></p>
         <br/>
-        </label>
-      </form>
-    </div>
+      <hr>
+    </form>
+  </div>
     <div class="col-md-9">
       <span>
         <h2>Set Housing Availability</h2>
         <br>
-        <form>
+        <form action="process_availability.php", method="post">
         <label>Address</label>
         <input type="text" name="address">
         <br><br>
         <label>Number of students able to host(1,2,etc.)</label>
         <br>
-        <input type="text" name="numofstudents">
+        <input type="text" name="studentcount">
         <br><br>
         <label>Hosting Period</label>
         <br>
@@ -61,11 +53,11 @@
         <input type="radio" name="genderpreference" value="Both" >Both
         <br><br>
         <label> Comments</label>
-        <textarea rows="4" cols="100" name="comments" form="requestform"></textarea><br><br>
+        <textarea rows="4" cols="100" name="comments"></textarea><br><br>
         
 
 
-          <input type="submit" class="btn btn-warning" value="submit"> 
+          <input type="submit" name="housingAvailability" class="btn btn-warning" value="submit"> 
           <input type="reset" class="btn btn-warning">         
         </form>
       </span>
@@ -73,11 +65,6 @@
   </div>
 
 
- <footer class="container-fluid">
-  <p>Copyright 2016 AirNart Inc. </p>
-</footer>
-
- 
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -86,4 +73,12 @@
 
 
 </body>
+
+
+ 
+   <footer class="container-fluid col-md-12">
+  <span>
+Copyright 2016 AirNart Inc. </span>
+</footer>
+
 </html>

@@ -4,7 +4,7 @@ include("connection.php");
     if(!(isset($_SESSION['login'])&& $_SESSION['login']!=''))
     {
       echo "In order to reaccess this page, you must login!";
-      header("Location:index.html");
+      header("Location:index.php");
     }
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		$bag_amount = $_POST['bag_amount'];
 
 		$user_email = $_SESSION['login_email'];
-		$q = mysqli_query($dbc,"SELECT * FROM student WHERE  Email = '$user_email'");
+		$q = mysqli_query($dbc,"SELECT id FROM student WHERE  Email = '$user_email'");
 		$numrows = mysqli_num_rows($q);
 		if($numrows !=0)
 		{

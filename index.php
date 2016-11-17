@@ -34,23 +34,22 @@
   </nav>
 </div>
 -->
+</br>
 </header>
 <body class="">
 <div class="container bgshadow">
 <h1 class="h1-title">Welcome to AirNART</h1>
 
-
-<div class="col-sm-4 col-md-3">
-  <form class="form-signin" name="login" action="login.php" method="post">       
-    <h2 class="form-signin-heading">Login</h2>
-      <input type="text" class="form-control" name="login_email" placeholder="Enter your email" required="" autofocus="" />
-      <input type="password" class="form-control" name="login_password" placeholder="Enter your password" required=""/>      
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
-  </form>
+</br>
+<div class="col-sm-12 col-xs-12 col-md-12 text-center">
+<a href="loginpage.html">
+  <button class="btn btn-primary btn-lg btnwidth">Click here to login</button>
+  </a>
 </div>
 
 
-<span class="col-sm-8 col-md-9 spanpad">
+
+<span class="col-sm-12 col-xs-12 col-md-12 spanpad">
 <h2 align="center">You are a Student</h2		>
 <span class="spanpad">
       <div class="row">

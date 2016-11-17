@@ -1,3 +1,6 @@
+<!-- This page for displaying The lists -->
+
+
 <?php
 
     session_start();
@@ -8,7 +11,11 @@
     }
 
     include("connection.php");
+  
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,30 +44,12 @@
 			<div class="row">
 				<ul class ="nav-custom">
 
-					<li class = "active navli col-md-3 col-sm-3 col-xs-12"> <a href = "adminHome.php" class="navlink">Home</a></li>
+					<li class = "active navli col-md-3 col-sm-3 col-xs-12"> <a href = "nothing" class="navlink">Home</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 </div>
-
-<!--<nav class="navbar navbar-default " role="navigation">
-    <div class="container">
-      <div class="navbar-header">-->
-       
-     <!-- </div> 
-      <div class="" id="collapse">
-        <ul class="nav navbar-nav nav ">
-          <li class="active"><a href="#featured">Home</a></li>
-          <li><a href="#mission">Mission</a></li>
-           <li><a href="#staff">Volunteering</a></li>
-          <li><a href="#services">Housing</a></li>
-          <li><a href="#testimonials">Transportation</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>-->
-<body>
 
 
 <main>
@@ -68,7 +57,7 @@
  		<div class="row">
     		<section class="col-sm-12">
       			<div class="h1-title">
-				<h1>This is the main content</h1>
+				<h1>Manage Volunteers</h1>
 				</div>    
     		</section>
  		</div>
@@ -92,8 +81,8 @@
 				
 				<span>
 				
-				<button class="btn btn-lg btn btn-warning"><a href="requestOutput.php" class="btn-a">Manage Requests</a></button>
-				<button class="btn btn-lg btn btn-warning"><a href="volunteerOutput.php" class="btn-a">Manage Volunteers</a></button>
+				<button class="btn btn-lg btn btn-warning"><a href="" class="btn-a">Manage Requests</a></button>
+				<button class="btn btn-lg btn btn-warning"><a href="" class="btn-a">Manage Volunteers</a></button>
 					
 				</span>
 			</div>

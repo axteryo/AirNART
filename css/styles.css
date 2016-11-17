@@ -95,6 +95,9 @@ form{
 
 	
 }
+.fixed{
+	position: fixed;
+}
 .h1-head
 {
 	padding-left: 5%;
@@ -183,6 +186,10 @@ form{
 .navlink:hover {
 	text-decoration: none;
     color: #eedf34;
+}
+
+.table:tr:hover{
+	background-color: grey;
 }
 
 /*.active

@@ -26,7 +26,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 				mysqli_query($dbc,"INSERT INTO request (student_id, pickup_request, housing_request, bag_amount) VALUES('$user_id','$pickup_request', '$housing_request', '$bag_amount')");
 
 				if($pickup_request == 'Yes')
-				{
+				{	
+					$r_query = mysqli_query($dbc,"SELECT * FROM request WHERE '$user_id'=student_id");
+					$row = mysqli_fetch_array($r_query);
+					$request_id = $row['id'];
 					$departure_name = $_POST['departurename'];
 					$departure_number = $_POST['departurenumber'];
 					$departure_date = $_POST['departuredate'];
@@ -36,11 +39,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 					$arrival_date = $_POST['arrivaldate'];
 					$arrival_time = $_POST['arrivaltime'];
 
-					mysqli_query($dbc,"INSERT INTO flight(departure_name, departure_number, departure_date, departure_time, arrival_name, arrival_number, arrival_date, arrival_time, student_id) VALUES('$departure_name', '$departure_number', '$departure_date', '$departure_time', '$arrival_name', '$arrival_number', '$arrival_date', '$arrival_time', '$user_id')");
+					mysqli_query($dbc,"INSERT INTO flight(departure_name, departure_number, departure_date, departure_time, arrival_name, arrival_number, arrival_date, arrival_time, student_id, request_id) VALUES('$departure_name', '$departure_number', '$departure_date', '$departure_time', '$arrival_name', '$arrival_number', '$arrival_date', '$arrival_time', '$user_id', '$request_id')");
 				}
 				if($housing_request == 'Yes')
 				{
-
+					$r_query = mysqli_query($dbc,"SELECT * FROM request WHERE '$user_id'=student_id");
+					$row = mysqli_fetch_array($r_query);
+					$request_id = $row['id'];
 					$housing_date = $_POST['housingdate'];
 					$numofdays = $_POST['numofdays'];
 					$nextdestination = $_POST['nextdestination'];
@@ -48,7 +53,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
 					if(!empty($housing_date) && !empty($numofdays) && !empty($nextdestination))
 					{
-						mysqli_query($dbc,"INSERT INTO housing(student_id, time_period, NumberofDays, next_destination, comments) VALUES('$user_id','$housing_date', '$numofdays', '$nextdestination', '$comments')");
+						mysqli_query($dbc,"INSERT INTO housing(student_id, time_period, NumberofDays, next_destination, comments, request_id) VALUES('$user_id','$housing_date', '$numofdays', '$nextdestination', '$comments', '$request_id')");
 					}
 				}
 				if($housing_request == 'No')
